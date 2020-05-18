@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.scss';
 
+import Auth from '../components/Auth/Auth';
+import BoardContainer from '../components/BoardContainer/BoardContainer';
+import MyNavbar from '../components/MyNavbar/MyNavbar';
+
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Inside React-Pinterest</h1>
-        <button className="btn btn-dark">Pinterest</button>
+        <h1>React-Pinterest</h1>
+        <MyNavbar />
+        <Auth />
+        <BoardContainer />
       </div>
     );
   }
