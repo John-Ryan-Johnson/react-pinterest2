@@ -23,4 +23,4 @@ const getPinsByBoardId = (boardId) => new Promise((resolve, reject) => {
     });
 });
 
-export default getPinsByBoardId;
+export default { getPinsByBoardId };
