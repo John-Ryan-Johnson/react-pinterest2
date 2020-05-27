@@ -54,7 +54,7 @@ class BoardContainer extends React.Component {
     return (
       <div className="BoardContainer">
         <h2>Boards</h2>
-        <button className="btn btn-warning" onClick={() => this.setState({ formOpen: true })}><i className="fas fa-plus"></i></button>
+        <button className="btn btn-warning mb-3" onClick={() => this.setState({ formOpen: true })}><i className="fas fa-plus"></i></button>
         { formOpen ? <BoardForm saveNewBoard={this.saveNewBoard}/> : ''}
         <div className="d-flex flex-wrap">
           {makeBoards}
